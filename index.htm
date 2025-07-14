@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Catalog</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ffffff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+    }
+    header img {
+      height: 50px;
+    }
+    header h1 {
+      font-size: 24px;
+      color: #333;
+      margin: 0;
+    }
+    nav {
+      background-color: #ffffff;
+      padding: 10px 20px;
+      display: flex;
+      gap: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+    nav a {
+      text-decoration: none;
+      color: #4caf50;
+      font-weight: bold;
+    }
+    .section {
+      padding: 20px;
+    }
+    .section h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #333;
+      border-left: 4px solid #4caf50;
+      padding-left: 10px;
+    }
+    .catalog {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .item {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .item:hover {
+      transform: translateY(-5px);
+    }
+    .item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .item-name {
+      font-size: 16px;
+      margin: 10px 0;
+      color: #444;
+    }
+    .price-tag {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-weight: bold;
+      display: inline-block;
+    }
+  </style>
+<script defer data-domain="omelnoorproducts.tiiny.site" src="https://analytics.tiiny.site/js/plausible.js"></script><script type="text/javascript" src="https://tiiny.host/ad-script.js"></script></head>
+<body>
+  <header>
+    <h1>Product Catalog</h1>
+    <img src="https://via.placeholder.com/150x50?text=LOGO" alt="Logo">
+  </header>
+
+  <nav>
+    <a href="#pcs">PCs</a>
+    <a href="#laptops">Laptops</a>
+    <a href="#mobile">Mobile Accessories</a>
+    <a href="#pc-accessories">PC Accessories</a>
+    <a href="#Diverse">Diverse</a>
+  </nav>
+
+  <div class="section" id="pcs">
+    <h2>PCs</h2>
+    <div class="catalog">
+      <div class="item">
+        <img src="https://via.placeholder.com/200x150" alt="Gaming PC">
+        <div class="item-name">Gaming PC</div>
+        <div class="price-tag">$1000</div>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/200x150" alt="Office PC">
+        <div class="item-name">Office PC</div>
+        <div class="price-tag">$700</div>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/200x150" alt="Mini PC">
+        <div class="item-name">Mini PC</div>
+        <div class="price-tag">$500</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="laptops">
+    <h2>Laptops</h2>
+    <div class="catalog">
+      <div class="item">
+        <img src="https://via.placeholder.com/200x150" alt="Ultrabook">
+        <div class="item-name">Ultrabook</div>
+        <div class="price-tag">$850</div>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/200x150" alt="Gaming Laptop">
+        <div class="item-name">Gaming Laptop</div>
+        <div class="price-tag">$1200</div>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/200x150" alt="Student Laptop">
+        <div class="item-name">Student Laptop</div>
+        <div class="price-tag">$600</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="mobile">
+    <h2>Mobile Accessories</h2>
+    <div class="catalog">
+      <div class="item">
+        <img src="https://via.placeholder.com/200x150" alt="Phone Case">
+        <div class="item-name">Phone Case</div>
+        <div class="price-tag">$15</div>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/200x150" alt="Wireless Charger">
+        <div class="item-name">Wireless Charger</div>
+        <div class="price-tag">$25</div>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/200x150" alt="Earbuds">
+        <div class="item-name">Bluetooth Earbuds</div>
+        <div class="price-tag">$40</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="pc-accessories">
+    <h2>PC Accessories</h2>
+    <div class="catalog">
+      <div class="item">
+        <img src="https://via.placeholder.com/200x150" alt="Mechanical Keyboard">
+        <div class="item-name">Mechanical Keyboard</div>
+        <div class="price-tag">$70</div>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/200x150" alt="Gaming Mouse">
+        <div class="item-name">Gaming Mouse</div>
+        <div class="price-tag">$35</div>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/200x150" alt="Headset">
+        <div class="item-name">Gaming Headset</div>
+        <div class="price-tag">$60</div>
+      </div>
+    </div>
+  </div>
+  
+   <div class="section" id="Diverse">
+    <h2>Diverse</h2>
+    <div class="catalog">
+      <div class="item">
+        <img src="https://via.placeholder.com/200x150" alt="Gaming PC">
+        <div class="item-name">Gaming PC</div>
+        <div class="price-tag">$1000</div>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/200x150" alt="Office PC">
+        <div class="item-name">Office PC</div>
+        <div class="price-tag">$700</div>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/200x150" alt="Mini PC">
+        <div class="item-name">Mini PC</div>
+        <div class="price-tag">$500</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
