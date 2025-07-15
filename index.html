@@ -68,9 +68,11 @@
     }
     .item img {
       width: 100%;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 8px;
+      height: auto;
+      max-height: 150px;
+     object-fit: contain;
+     border-radius: 8px;
+     background-color: #f9f9f9; /* Optional: adds a soft background for transparency or small images */
     }
     .item-name {
       font-size: 16px;
