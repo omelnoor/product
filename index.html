@@ -12,15 +12,20 @@
       padding: 0;
     }
     header {
-      background-color: #ffffff;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #ddd;
+     background-color: #ffffff;
+     padding: 10px 20px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border-bottom: 1px solid #ddd;
+     max-height: 80px; /* limits the header's size */
+     overflow: hidden; /* hides anything too big */
     }
+
     header img {
-      height: 50px;
+    height: 140px;      /* you can try 70 or 80 for slightly larger */
+    width: auto;
+    max-height: 100%;  /* make sure it doesn't stretch */
     }
     header h1 {
       font-size: 24px;
@@ -105,14 +110,12 @@
 <body>
   <header>
     <h1>Product Catalog</h1>
-    <img src="https://via.placeholder.com/150x50?text=LOGO" alt="Logo">
+    <img src="logo3.png" alt="Logo">
   </header>
 
-  <nav>
-    <a href="#pcs">PCs</a>
+  <nav> 
     <a href="#laptops">Laptops</a>
-    <a href="#mobile">Mobile Accessories</a>
-    <a href="#pc-accessories">PC Accessories</a>
+    <a href="#pcs">PCs</a>
     <a href="#Diverse">Diverse</a>
   </nav>
 
@@ -128,30 +131,30 @@
 
       <div class="item">
         <img src="lap-photos/d6220_.jpg" alt="Gaming Laptop">
-        <div class="item-name">Gaming Laptop</div>
-        <div class="specs">Ryzen 7, RTX 3060, 16GB RAM, 1TB SSD</div>
-        <div class="price-tag">$1200</div>
+        <div class="item-name">Dell 6220</div>
+        <div class="specs">Core i5 2th, 4GB RAM, 500GB HDD</div>
+        <div class="price-tag">E£3499</div>
       </div>
 
       <div class="item">
-        <img src="https://via.placeholder.com/200x150" alt="Student Laptop">
-        <div class="item-name">Student Laptop</div>
-        <div class="specs">Intel i5, 8GB RAM, 256GB SSD</div>
-        <div class="price-tag">$600</div>
+        <img src="lap-photos/6410.png" alt="Student Laptop">
+        <div class="item-name">Dell 6410</div>
+        <div class="specs">Core i3 1th, 4GB RAM, 250GB HDD</div>
+        <div class="price-tag">E£3499</div>
       </div>
 
       <div class="item">
-        <img src="https://via.placeholder.com/200x150" alt="Student Laptop">
-        <div class="item-name">Student Laptop</div>
-        <div class="specs">Intel i5, 8GB RAM, 256GB SSD</div>
-        <div class="price-tag">$600</div>
+        <img src="lap-photos/6520.png" alt="Student Laptop">
+        <div class="item-name">Dell 6520</div>
+        <div class="specs">Intel i5 2th, 4GB RAM, 320GB HDD</div>
+        <div class="price-tag">E£4499</div>
       </div>
 
       <div class="item">
-        <img src="https://via.placeholder.com/200x150" alt="Student Laptop">
-        <div class="item-name">Student Laptop</div>
-        <div class="specs">Intel i5, 8GB RAM, 256GB SSD</div>
-        <div class="price-tag">$600</div>
+        <img src="lap-photos/hp 215.png" alt="Student Laptop">
+        <div class="item-name">hp 215</div>
+        <div class="specs">AMD A4, 4GB RAM, 500GB HDD</div>
+        <div class="price-tag">E£4899</div>
       </div>
     </div>
   </div>
@@ -177,48 +180,7 @@
     </div>
   </div>
 
-  <div class="section" id="mobile">
-    <h2>Mobile Accessories</h2>
-    <div class="catalog">
-      <div class="item">
-        <img src="https://via.placeholder.com/200x150" alt="Phone Case">
-        <div class="item-name">Phone Case</div>
-        <div class="price-tag">$15</div>
-      </div>
-      <div class="item">
-        <img src="https://via.placeholder.com/200x150" alt="Wireless Charger">
-        <div class="item-name">Wireless Charger</div>
-        <div class="price-tag">$25</div>
-      </div>
-      <div class="item">
-        <img src="https://via.placeholder.com/200x150" alt="Earbuds">
-        <div class="item-name">Bluetooth Earbuds</div>
-        <div class="price-tag">$40</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section" id="pc-accessories">
-    <h2>PC Accessories</h2>
-    <div class="catalog">
-      <div class="item">
-        <img src="https://via.placeholder.com/200x150" alt="Mechanical Keyboard">
-        <div class="item-name">Mechanical Keyboard</div>
-        <div class="price-tag">$70</div>
-      </div>
-      <div class="item">
-        <img src="https://via.placeholder.com/200x150" alt="Gaming Mouse">
-        <div class="item-name">Gaming Mouse</div>
-        <div class="price-tag">$35</div>
-      </div>
-      <div class="item">
-        <img src="https://via.placeholder.com/200x150" alt="Headset">
-        <div class="item-name">Gaming Headset</div>
-        <div class="price-tag">$60</div>
-      </div>
-    </div>
-  </div>
-
+  
   <div class="section" id="Diverse">
     <h2>Diverse</h2>
     <div class="catalog">
