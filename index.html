@@ -150,6 +150,24 @@
             opacity: 1;
             max-height: 100px; /* Adjust based on expected spec content */
         }
+
+        footer {
+    background-color: var(--secondary-color);
+    color: var(--text-color-dark);
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    padding: var(--spacing-medium);
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 0 -2px 5px var(--shadow-color);
+}
+
+@media (max-width: 480px) {
+    footer {
+        font-size: 14px;
+        padding: var(--spacing-small);
+    }
+}
     </style>
 </head>
 <body>
@@ -681,5 +699,11 @@
 
             </div>
     </div>
+
+    <footer>
+    <div class="footer-content">
+        <p>📍 دمياط ميدان سرور، امام مدرسة اللوزي، مركز دمياط</p>
+    </div>
+</footer>
 </body>
 </html>
